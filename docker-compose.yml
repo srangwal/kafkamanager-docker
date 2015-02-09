@@ -1,0 +1,12 @@
+zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+        - 2181
+
+kafkamanager:
+    build: .
+    ports:
+        - 9000:9000
+    links:
+        - zookeeper:zk
+
