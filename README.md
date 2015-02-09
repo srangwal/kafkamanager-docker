@@ -8,7 +8,7 @@ Docker setup for yahoo's kafkamanager
 
 # Running stand-alone (does not require docker-compose)
 ```sh
-$> docker run -p 9000:9000 -e ZKHOSTS=<server>:<port> --name="kafka-manager" srangwala/kafkamanager
+$> docker run -p 9000:9000 -e ZKHOSTS=<server>:<port> --name="kafka-manager" srangwal/kafkamanager
 ```
 _ZKHOSTS is zookeeper that kafka-manager will use for its own bookkeeping. It is not required to match the zookeeper for any
 of your kafka cluster._
