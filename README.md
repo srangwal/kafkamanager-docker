@@ -1,8 +1,8 @@
 # kafkamanager-docker
-Docker setup for yahoo's kafkamanager
+Docker setup for [yahoo's kafka-manager](https://github.com/yahoo/kafka-manager)
 
 # Requirements
-- Docker
+- docker
 - docker-compose (https://github.com/docker/fig/blob/master/docs/install.md)
 
 
