@@ -1,5 +1,5 @@
 FROM          ubuntu:latest
-MAINTAINER    apps@turn.com
+MAINTAINER    srangwal@gmail.com
 
 # Install some basic utils
 RUN           echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
