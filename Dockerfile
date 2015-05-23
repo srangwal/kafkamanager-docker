@@ -15,8 +15,8 @@ RUN           sudo ln -s /usr/lib/jvm/java-1.7.0-openjdk-amd64 /usr/lib/jvm/defa
 # For Kafka-manager
 RUN           sudo apt-get install -y --allow-unauthenticated sbt
 RUN           cd /tmp && git clone https://github.com/yahoo/kafka-manager.git
-RUN           cd /tmp/kafka-manager && sbt clean dist && mv ./target/universal/kafka-manager-1.0-SNAPSHOT.zip /opt
-RUN           cd /opt && unzip kafka-manager-1.0-SNAPSHOT.zip && ln -s kafka-manager-1.0-SNAPSHOT kafka-manager
+RUN           cd /tmp/kafka-manager && sbt clean dist && mv ./target/universal/kafka-manager*.zip /opt
+RUN           cd /opt && unzip kafka-manager*.zip && ln -s $(find kafka-manager* -type d -prune) kafka-manager
 
 ENV           KAFKA_MANAGER_HOME /opt/kafka-manager
 
